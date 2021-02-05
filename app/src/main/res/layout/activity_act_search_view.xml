@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sisy.support.ashokas.sisy.ActivitySisy.ACT_searchView">
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lyt_search_view"
+        android:layout_height="40dp"></android.support.v7.widget.SearchView>
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="right"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/lyt_srchvw_totcash"
+        android:layout_width="match_parent"
+        android:text="Total:0.0"
+        android:fontFamily="monospace"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lyt_search_view"
+        android:layout_marginTop="40dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lyt_rcy_cashed_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lyt_srchvw_totcash"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"></android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/lyt_flt_delete"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="46dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_delete_white_24dp" />
+
+
+</RelativeLayout>

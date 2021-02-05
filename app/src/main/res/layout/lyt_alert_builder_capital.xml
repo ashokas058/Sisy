@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/lyt_main_card"
+    app:cardBackgroundColor="@color/gaycustom"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+           android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/lyt_stng_alrt_cash_amount"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Ammount"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@id/lyt_stng_alrt_cash_amount"
+            android:id="@+id/lyt_stng_alrt_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Purpose"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

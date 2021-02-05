@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6ea0c70"
+    tools:context="sisy.support.ashokas.sisy.ActivitySisy.ACT_home">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/lyt_flt_bt_menu"
+        android:layout_gravity="right"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        app:fabSize="auto"
+        android:layout_margin="10dp"
+        app:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/ic_menu_white_24dp" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="320dp"
+            android:id="@+id/lyt_search_lyt"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="55dp">
+            <TextView
+                android:id="@+id/lyt_search"
+                android:text="search people...."
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:background="@drawable/drw_lyt_textview_corner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/lyt_total_rcvd"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:textSize="18dp"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="20dp"
+        android:textColor="#f3f1eeee"
+        android:drawableLeft="@drawable/ic_arrow_forward_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:10250Rs"/>
+    <TextView
+        android:id="@+id/lyt_last_paymt"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:textSize="18dp"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="20dp"
+        android:textColor="#f3f1eeee"
+        android:drawableLeft="@drawable/ic_arrow_forward_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="last payment:"/>
+<LinearLayout
+    android:background="@drawable/drw_lyt_home_curverd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:layout_marginTop="55dp"
+    android:orientation="vertical">
+
+
+        <RadioGroup
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:id="@+id/lyt_radio_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:padding="2dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/lyt_radio_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"/>
+            <RadioButton
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/lyt_radio_expen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expence"/>
+            <RadioButton
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/lyt_radio_withdraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WithDraw"/>
+        </RadioGroup>
+
+
+<EditText
+    android:inputType="text"
+    android:imeOptions="actionNext"
+    android:id="@+id/lyt_username"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:drawablePadding="10dp"
+    android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+    android:layout_width="550dp"
+    android:layout_gravity="center"
+    android:layout_height="55dp"
+    android:hint="Name...."/>
+    <EditText
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:id="@+id/lyt_addrs"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:layout_width="550dp"
+        android:layout_gravity="center"
+        android:layout_height="55dp"
+        android:hint="Address...."
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:imeOptions="actionDone"
+        android:hint="Cash...."
+        android:id="@+id/lyt_cash"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_indian_42111"
+        android:layout_width="550dp"
+        android:layout_gravity="center"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"/>
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/lyt_save"
+            android:background="@android:color/transparent"
+            android:text="save"
+            android:textColor="@android:color/white"
+            android:elevation="10dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_cloud_upload_black_24dp"
+            android:layout_width="130dp"
+            android:layout_height="55dp" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+</LinearLayout>
